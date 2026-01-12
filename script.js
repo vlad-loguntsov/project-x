@@ -8,7 +8,7 @@ const iframe = document.querySelector("#embed-frame");
  * The target origin for postMessage.
  * @type {string}
  */
-const figmaOrigin = new URL(iframe.src).origin;
+const figmaOrigin = "https://www.figma.com";
 
 /**
  * Sends a message to the iframe to navigate to the next page in the prototype.
