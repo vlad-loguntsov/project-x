@@ -1,6 +1,11 @@
 const iframe = document.querySelector("#embed-frame");
 const figmaOrigin = new URL(iframe.src).origin;
-const allowedOrigins = new Set([figmaOrigin, "https://www.figma.com", "https://embed.figma.com"]);
+
+const allowedOrigins = new Set([
+  figmaOrigin,
+  "https://www.figma.com",
+  "https://embed.figma.com"
+]);
 
 window.addEventListener("message", (event) => {
   const prototypeEvents = ["MOUSE_PRESS_OR_RELEASE", "PRESENTED_NODE_CHANGED", "INITIAL_LOAD", "NEW_STATE", "REQUEST_CLOSE"];
